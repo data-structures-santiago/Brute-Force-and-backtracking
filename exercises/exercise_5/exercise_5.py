@@ -12,8 +12,6 @@ def dividends(n,respuesta_actual="",answers=[]):
         
         dividends(n,respuesta_actual+str(i),answers)
         
-        #dividends(n,respuesta_actual,answers)
-        
     return answers
 
 

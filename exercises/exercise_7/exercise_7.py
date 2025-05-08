@@ -1,20 +1,11 @@
-def dividends(n,respuesta_actual="",answers=[]):
-    
-
-    if len(respuesta_actual) == n:
-        if (int(respuesta_actual) % 3 == 0):
-
-            answers.append(respuesta_actual)
-        
+def password( n,current_password, passwords=[],last_char=""):
+    if(len(current_password) == n):
+        passwords.append(current_password)
         return
-
-    for i in range(1,n+1):
-        
-        dividends(n,respuesta_actual+str(i),answers)
-        
-        #dividends(n,respuesta_actual,answers)
-        
-    return answers
+    
+    for i in "01":
+        if(current_password[-1]=="1"):
+            password(n,current_password+i,passwords)
+        password(n,current_password+i,passwords)
 
 
-print(dividends(3))

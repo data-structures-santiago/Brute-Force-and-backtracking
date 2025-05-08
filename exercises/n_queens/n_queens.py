@@ -1,9 +1,7 @@
 def queens(n:int,respuesta=[]): # como devuevlo solo el resultado sin que sea un parametro mas
     
-    if len(respuesta)==n:
-        
+    if len(respuesta)==n:        
         print(respuesta)
-
         return  
     
     for i in range(n):
@@ -12,7 +10,6 @@ def queens(n:int,respuesta=[]): # como devuevlo solo el resultado sin que sea un
             queens(n,respuesta)
             respuesta.pop()
         
-
     return respuesta
 
 
@@ -20,7 +17,6 @@ def validar(posible_reina,respuesta):
     if posible_reina in respuesta:
         return False
     
-
     val_izq = posible_reina
     val_der = posible_reina
 
@@ -30,9 +26,6 @@ def validar(posible_reina,respuesta):
         if respuesta[i] == val_izq or respuesta[i] == val_der:
             return False
     
-    
-
-
     return True
     
     

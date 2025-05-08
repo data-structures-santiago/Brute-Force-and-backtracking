@@ -7,6 +7,9 @@ def backtracking(A,k=5, indice= 0, subconjunto_actual=[], resultado=[]):
     if sum(subconjunto_actual) > k or indice == len(A) :
         return
     subconjunto_actual.append(A[indice])
+
+    
+    
     backtracking(A,k, indice + 1, subconjunto_actual, resultado)
 
     # No incluir A[indice]

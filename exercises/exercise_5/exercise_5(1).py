@@ -1,7 +1,4 @@
 
-
-
-
 def dividends(n,respuesta_actual=0):
     
     if (respuesta_actual//10**(n-1)>=1):
